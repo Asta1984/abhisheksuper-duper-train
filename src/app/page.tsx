@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
 import React from "react";
-import { Mail, Instagram, Linkedin, ChevronDown } from "lucide-react";
-import RealisticLightspeedWarpDrive from '../components/realistic-lightspeed-warp-drive';
+import { Mail, Instagram, Linkedin } from "lucide-react";
+import RealisticLightspeedWarpDrive from "../components/realistic-lightspeed-warp-drive";
 import { TimelineDemo } from "../components/timeline";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
-import Link from "next/link"
-import { workExperience } from "@/constants/workExperience"
+} from "@/components/ui/accordion";
+import Link from "next/link";
+import { workExperience } from "@/constants/workExperience";
 
 const ProfilePage = () => {
   return (
@@ -22,10 +22,12 @@ const ProfilePage = () => {
           <div className="space-y-6">
             {/* Header */}
             <div className="space-y-4">
-              <h1 className="text-3xl font-bold text-white">Hey! I'm <span className="text-blue-500">Abhishek Singh</span> and I'm 
-              your best <span className="text-green-500">Product Manager</span>.</h1>
+              <h1 className="text-3xl font-bold text-white">
+                Hey! I&apos;m <span className="text-blue-500">Abhishek Singh</span> and I&apos;m 
+                your best <span className="text-green-500">Product Manager</span>.
+              </h1>
               <div className="flex items-center text-gray-400">
-                {/* <div className="flex items-center gap-2">San Francisco, CA</div> */}
+                {/* Placeholder for location or additional details */}
               </div>
 
               {/* Social Links */}
@@ -67,7 +69,7 @@ const ProfilePage = () => {
               </p>
 
               <p>
-                Crafting autonomous bots, machine learning projects and Product development interests me.
+                Crafting autonomous bots, machine learning projects, and Product development interests me.
                 You could reach out to me via email.
               </p>
             </div>
@@ -143,7 +145,7 @@ const ProfilePage = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProfilePage
+export default ProfilePage;

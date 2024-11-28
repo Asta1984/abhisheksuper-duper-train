@@ -41,7 +41,7 @@ export default function Component() {
           id: i,
           x: Math.cos(angle) * distance + window.innerWidth / 2,
           y: Math.sin(angle) * distance + window.innerHeight / 2,
-          size: Math.random() * 1 + 0.1, 
+          size: Math.random() * 2 + 0.1, 
           opacity: Math.random() * 0.5 + 0.5,
           depth: depth,
         })
