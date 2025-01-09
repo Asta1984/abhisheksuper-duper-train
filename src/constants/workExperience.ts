@@ -1,4 +1,41 @@
 export const workExperience = [
+
+  {
+    icon: "V",
+    company: "V4Fluffy",
+    role: "React, Tailwind, typeScript, Solana",
+    shortdesc:
+      "",
+    desc: "This a presale landing page, done as a interview task consist of solanawallet adapter and react components",
+    bgColor: "bg-teal-700",
+    textColor: "text-white",
+    sourceCode: "https://github.com/Asta1984/fluffy-octo-invention.git",
+    webLink: "https://fluffy-octo-invention-five.vercel.app/",
+  },  
+  {
+      icon: "M",
+      company: "MoonEX",
+      role: "React, Tailwind, typeScript, Shadcn",
+      shortdesc:
+        "",
+      desc: "This a DEX(decentralize exchange) landing page, done for moonex DEX showcasing proficiency in respective tech-stack.",
+      bgColor: "bg-green-500",
+      textColor: "text-white",
+      sourceCode: "https://github.com/Asta1984/stunning-sniffle.git",
+      webLink: "https://stunning-sniffle-two.vercel.app/",
+    },
+    {
+      icon: "A",
+      company: "Allen Institute",
+      role: "React, Tailwind, Javascript, GitHub",
+      shortdesc:
+        "Allen.in Landing Page",
+      desc: "Learning is easy when you do it while building projects, This is a simple edTech landing page.",
+      bgColor: "bg-orange-600",
+      textColor: "text-white",
+      sourceCode: "https://github.com/Asta1984/probable-guacamole.git",
+      webLink: "https://allen.sewantika.com/",
+    },
     {
       icon: "S",
       company: "Sewantika",
@@ -25,10 +62,10 @@ export const workExperience = [
     {
       icon: "P",
       company: "Mordern Perodic table",
-      role: "HTML, CSS, Javascript, githubActions",
+      role: "HTML, CSS, Javascript",
       shortdesc: "My first web development project",
       desc: "The idea was simple I could not remember the periodic table at school which push me to learn web dev and built this project.",
-      bgColor: "bg-black",
+      bgColor: "bg-gray-400",
       textColor: "text-white",
       sourceCode: "https://github.com/Asta1984/Periodic-table.git",
       webLink: "https://asta1984.github.io/Periodic-table/",
@@ -47,7 +84,7 @@ export const workExperience = [
     {
       icon: "A",
       company: "Autonomous Bot",
-      role: "Embedded C, Data stuctures, Arduino",
+      role: "Embedded C, ROS2, SLAM",
       shortdesc: "An autonoumous navigating bot.",
       desc: "Developed and designed a bot capable of multi-terrain operation with 4 degree of freedom uses different sensor fusion to get surrounding data to create 3-D mappings.",
       bgColor: "bg-green-500",
@@ -58,7 +95,7 @@ export const workExperience = [
     {
       icon: "T",
       company: "Vehicle Side Profiling",
-      role: "Python, Flask, Networking Protocols",
+      role: "Python, UDP, Sensor-fusion",
       shortdesc: "Create side profiles of moving vehicles.",
       desc: "This project involved generation of side profile of vehicle while it's passing through a beam of sensor.",
       bgColor: "bg-red-600",
