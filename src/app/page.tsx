@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { workExperience } from "@/constants/workExperience";
+import { motion } from "framer-motion";
 
 const ProfilePage = () => {
   return (
@@ -50,6 +51,15 @@ const ProfilePage = () => {
               </div>
             </div>
 
+
+
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.1 }} 
+              transition={{ duration: 1, ease: "easeOut" }}
+              exit={{ opacity: 0 }}
+            >
             {/* Bio Sections */}
             <div className="space-y-4 font-Typewriter text-gray-400 text-xs ">
               <p>
@@ -70,12 +80,21 @@ const ProfilePage = () => {
                 You could reach out to me via email.
               </p>
             </div>
+          </motion.div>
 
             {/* Work Experience */}
             <div>
               <h2 className="text-xl pt-10 font-OnlinePrivileges mb-4 text-white">Projects</h2>
               <Accordion type="single" collapsible className="space-y-2">
                 {workExperience.map((work, index) => (
+                <motion.div
+                  key = {index}
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true, amount: 0 }} 
+                  transition={{ duration: 0.1, ease: "easeOut" }}
+                  exit={{ opacity: 0 }}
+                  >
                   <AccordionItem
                     value={`item-${index}`}
                     key={index}
@@ -134,6 +153,7 @@ const ProfilePage = () => {
                       </div>
                     </AccordionContent>
                   </AccordionItem>
+                </motion.div>
                 ))}
               </Accordion>
             </div>
